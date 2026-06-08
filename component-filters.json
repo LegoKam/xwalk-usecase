@@ -22,8 +22,7 @@
   {
     "id": "hero-section",
     "components": [
-      "hero",
-      "title"
+      "hero"
     ]
   },
   {
