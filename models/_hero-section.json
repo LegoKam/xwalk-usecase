@@ -1,0 +1,40 @@
+{
+  "definitions": [
+    {
+      "title": "Hero Section",
+      "id": "hero-section",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/section/v1/section",
+            "template": {
+              "model": "hero-section",
+              "filter": "hero-section"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "hero-section",
+      "fields": [
+        {
+          "component": "text",
+          "name": "name",
+          "label": "Section Name",
+          "description": "The label shown for this section in the Content Tree"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "hero-section",
+      "components": [
+        "hero"
+      ]
+    }
+  ]
+}

@@ -24,6 +24,9 @@
       "components": [
         {
           "...": "./_section.json#/definitions"
+        },
+        {
+          "...": "./_hero-section.json#/definitions"
         }
       ]
     },
