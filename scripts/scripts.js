@@ -177,7 +177,7 @@ async function loadLazy(doc) {
           data.data[0].CSS
         ) {
           const cssFile = data.data[0].CSS;
-          loadCSS(`/styles/${cssFile}`);
+          loadCSS(`${window.hlx.codeBasePath}/styles/${cssFile}`);
         }
       })
       .catch(() => { /* ignore errors, default style will be used */ });
