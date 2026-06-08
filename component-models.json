@@ -142,6 +142,17 @@
     ]
   },
   {
+    "id": "hero-section",
+    "fields": [
+      {
+        "component": "text",
+        "name": "name",
+        "label": "Section Name",
+        "description": "The label shown for this section in the Content Tree"
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {
