@@ -166,7 +166,7 @@ async function loadLazy(doc) {
   // Dynamically load brand CSS based on branding.json endpoint
   try {
     const timestamp = Date.now();
-    fetch(`https://main--xwalk-usecase--legokam.aem.page/branding.json?${timestamp}`)
+    fetch(`/branding.json?${timestamp}`)
       .then((response) => response.ok ? response.json() : null)
       .then((data) => {
         if (
