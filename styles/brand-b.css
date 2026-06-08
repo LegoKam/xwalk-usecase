@@ -1,0 +1,9 @@
+/** AusOpen.com brand override */
+:root {
+  --background-color: #fff;               /* Bright white background */
+  --light-color: #e6f7ff;                 /* Soft accent blue background */
+  --dark-color: #003087;                  /* AO primary 'blue' */
+  --text-color: #222;                     /* Near-black for max readability */
+  --link-color: #00bfff;                  /* AO cyan/blue button & link color */
+  --link-hover-color: #0e7fed;            /* Slightly deeper AO blue */
+}

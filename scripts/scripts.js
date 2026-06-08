@@ -163,6 +163,27 @@ async function loadLazy(doc) {
   loadFooter(doc.querySelector('footer'));
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
+  // Dynamically load brand CSS based on branding.json endpoint
+  try {
+    const timestamp = Date.now();
+    fetch(`https://main--xwalk-usecase--legokam.aem.page/branding.json?${timestamp}`)
+      .then((response) => response.ok ? response.json() : null)
+      .then((data) => {
+        if (
+          data &&
+          data.data &&
+          Array.isArray(data.data) &&
+          data.data.length > 0 &&
+          data.data[0].CSS
+        ) {
+          const cssFile = data.data[0].CSS;
+          loadCSS(`/styles/${cssFile}`);
+        }
+      })
+      .catch(() => { /* ignore errors, default style will be used */ });
+  } catch (e) {
+    // do nothing
+  }
   loadFonts();
 }
 
