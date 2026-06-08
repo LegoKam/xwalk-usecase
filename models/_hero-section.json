@@ -33,7 +33,8 @@
     {
       "id": "hero-section",
       "components": [
-        "hero"
+        "hero",
+        "title"
       ]
     }
   ]
