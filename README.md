@@ -29,3 +29,21 @@ npm i
 ```sh
 npm run lint
 ```
+
+## Installation notes
+
+What we did:
+Set up AEM for legokam / xwalk-usecase.
+Started AEM Code Sync for selected GitHub repositories.
+We were not able to determine the user that installed AEM Code Sync. Please set the default admin in the User Admin Tool.
+
+What's next:
+Create your content:
+https://author-p152232-e1579634.adobeaemcloud.com
+Check your site:
+Preview: https://main--xwalk-usecase--legokam.aem.page/
+
+Live: https://main--xwalk-usecase--legokam.aem.live/
+
+Add users:
+Use the admin tool: https://labs.aem.live/tools/user-admin/index.html
