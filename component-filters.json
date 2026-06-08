@@ -23,7 +23,8 @@
     "id": "hero-section",
     "components": [
       "hero",
-      "title"
+      "title",
+      "cards"
     ]
   },
   {
